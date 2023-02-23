@@ -5,7 +5,7 @@
 
 x = int(input('1: '))
 y = int(input('2: '))
-### решение не работает
+## решение не работает
 for i in range(x):
     for j in range(y):
         if x == i + j and y == i * j:
