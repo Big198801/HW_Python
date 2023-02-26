@@ -2,8 +2,7 @@
 # (т.е. числа вида 2k), не превосходящие числа N
 
 number = int(input("верхняя граница степени двойки: "))
-i = 0
-n = 2
+n = 1
 print(n)
 while n <= number - n and n != number:
     n = n * 2
