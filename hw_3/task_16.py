@@ -7,17 +7,19 @@
 #     3
 #     -> 1
 
-size = int(input('Input count of elements in list:\n'))
-list = []
-i = 0
-while i < size:
-    list.append(int(input('input number...')))
-    i += 1
-print(list)
-magicNumber = int(input('what number do we search?'))
+size = int(input('Input count of elements in rand_list:\n'))
+rand_list = []
+
+for i in range(size):
+    rand_list.append(int(input('input number...')))
+    
+print(rand_list)
+
+magic_number = int(input('what number do we search?'))
 count = 0
-for j in list:
-    if j == magicNumber:
+for j in rand_list:
+    if j == magic_number:
+
         count += 1
 if count > 0:
     print(count)
