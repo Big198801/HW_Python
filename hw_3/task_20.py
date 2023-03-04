@@ -11,23 +11,24 @@
 
 # ноутбук
 #     12
-
+scruble = {
+    '1' : 'AEIOULNSTRАВЕИНОРСТ',
+    '2' : 'DGДКЛМПУ',
+    '3' : 'BCMPБГЁЬЯ',
+    '4' : 'FHVWYЙЫ',
+    '5' : 'KЖЗХЦЧ',
+    '8' : 'JXШЭЮ',
+    '10': 'QZФЩЪ'
+}
+print(type(scruble))
 word = input("input any word (eng or rus) : ").upper()
 count = 0
 
 for i in word:
-    if i in "AEIOULNRSTАВЕИНОРСТ":
-        count += 1
-    elif i in "DGДКЛМПУ":
-        count += 2
-    elif i in "BCMPБГЁЬЯ":
-        count += 3
-    elif i in "FHVWYЙЫ":
-        count += 4
-    elif i == "KЖЗХЦ":
-        count += 5
-    elif i in "JXШЭЮ":
-        count += 8
-    elif i in "QZФЩЪ":
-        count += 10
+    for k, v in scruble.items():
+        if i in v:
+            count += int(k)
+        
+
+
 print(count)
