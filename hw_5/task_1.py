@@ -5,7 +5,7 @@
 #     A = 2; B = 3 -> 8 
 
 def degree_ab(a, b):
-    if b <= 0 : #базовый случай
+    if b == 0 : #базовый случай
         return 1 
     return a * degree_ab(a, b-1) 
 
